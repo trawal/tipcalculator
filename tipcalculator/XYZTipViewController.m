@@ -7,6 +7,7 @@
 //
 
 #import "XYZTipViewController.h"
+#import "XYZSettingsViewController.h"
 
 @interface XYZTipViewController ()
 
@@ -19,6 +20,8 @@
 - (IBAction)onTap:(id)sender;
 
 - (void)updateValues;
+
+- (void)onSettingsButton;
 
 @end
 
@@ -37,6 +40,8 @@
 {
     [super viewDidLoad];
     [self updateValues];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonSystemItemAction target:self action:@selector(onSettingsButton)];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +65,38 @@
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalLable.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+}
+
+- (void)onSettingsButton {
+    [self.navigationController pushViewController:[[XYZSettingsViewController alloc] init] animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+
+    // Do NOT reset the tip % if there is an existing calculation on the page
+    float billAmount = [self.billTextField.text floatValue];
+    
+    if (!billAmount || billAmount == 0) {
+        // Set the value based on selected default value in Settings page
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        int defaultTip = [defaults integerForKey:@"defaultTip"];
+    
+        // NSLog(@"view will appear and updated default=%d", defaultTip);
+    
+        self.tipControl.selectedSegmentIndex = defaultTip;
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    //NSLog(@"view did appear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    //NSLog(@"view will disappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    //NSLog(@"view did disappear");
 }
 
 @end

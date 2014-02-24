@@ -21,6 +21,8 @@
 		78A7424418B3F9450052C9A2 /* tipcalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A7424318B3F9450052C9A2 /* tipcalculatorTests.m */; };
 		78A7425018B40F430052C9A2 /* XYZTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A7424E18B40F430052C9A2 /* XYZTipViewController.m */; };
 		78A7425118B40F430052C9A2 /* XYZTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A7424F18B40F430052C9A2 /* XYZTipViewController.xib */; };
+		78A7425518BB19FF0052C9A2 /* XYZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A7425318BB19FF0052C9A2 /* XYZSettingsViewController.m */; };
+		78A7425618BB19FF0052C9A2 /* XYZSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A7425418BB19FF0052C9A2 /* XYZSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		78A7424D18B40F430052C9A2 /* XYZTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTipViewController.h; sourceTree = "<group>"; };
 		78A7424E18B40F430052C9A2 /* XYZTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTipViewController.m; sourceTree = "<group>"; };
 		78A7424F18B40F430052C9A2 /* XYZTipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYZTipViewController.xib; sourceTree = "<group>"; };
+		78A7425218BB19FF0052C9A2 /* XYZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZSettingsViewController.h; sourceTree = "<group>"; };
+		78A7425318BB19FF0052C9A2 /* XYZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZSettingsViewController.m; sourceTree = "<group>"; };
+		78A7425418BB19FF0052C9A2 /* XYZSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYZSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				78A7422518B3F9450052C9A2 /* Supporting Files */,
 				78A7424D18B40F430052C9A2 /* XYZTipViewController.h */,
 				78A7424E18B40F430052C9A2 /* XYZTipViewController.m */,
+				78A7425218BB19FF0052C9A2 /* XYZSettingsViewController.h */,
+				78A7425318BB19FF0052C9A2 /* XYZSettingsViewController.m */,
+				78A7425418BB19FF0052C9A2 /* XYZSettingsViewController.xib */,
 				78A7424F18B40F430052C9A2 /* XYZTipViewController.xib */,
 			);
 			path = tipcalculator;
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A7422918B3F9450052C9A2 /* InfoPlist.strings in Resources */,
+				78A7425618BB19FF0052C9A2 /* XYZSettingsViewController.xib in Resources */,
 				78A7425118B40F430052C9A2 /* XYZTipViewController.xib in Resources */,
 				78A7423118B3F9450052C9A2 /* Images.xcassets in Resources */,
 			);
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A7422F18B3F9450052C9A2 /* XYZAppDelegate.m in Sources */,
+				78A7425518BB19FF0052C9A2 /* XYZSettingsViewController.m in Sources */,
 				78A7425018B40F430052C9A2 /* XYZTipViewController.m in Sources */,
 				78A7422B18B3F9450052C9A2 /* main.m in Sources */,
 			);
